@@ -35,3 +35,7 @@ a:hover {
     opacity: 1;
     font-weight: bold;
 }
+.active {
+    opacity: 1;
+    font-weight: bold;
+}
