@@ -1,6 +1,8 @@
+/* Importação da fonte padrão da página*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url("reset.css");
+@import url("reset.css");/*Importação do arquivo CSS que reseta o navegador */
 
+/* Declaração das variáveis */
 :root{
     --cor-fundo: #d5d5c9;
     --cor-texto: #1d1d1d;
@@ -27,17 +29,17 @@ nav {
 
 ul {
     display: flex;
-    list-style: none;
+    list-style: none; /* Remove os marcaadores de lista */
     gap: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 2px;/* Espaçameto entre letras */
 }
 a {
     color: #ffffff;
     text-decoration: none;
-    opacity: 0.5;
-    transition: 0.4s;
+    opacity: 0.5; /* Opacidade dos itens do seletor */
+    transition: 0.4s; /* Tempo de transição para evento */
 }
-a:hover {
+a:hover { /* Evento de mouse sobre o elemento */
     opacity: 1; 
     font-weight: bold;
 }
@@ -48,8 +50,8 @@ a:hover {
 .produtos-lista{
     display: flex;
     margin-top: 24px;
-    flex-wrap: wrap;
-    gap: 24px;
+    flex-wrap: wrap; /* Quebra automaticamente o conteúdo na página */
+    gap: 24px; /* Define o espaço entre linhas e colunas do elemento*/
     justify-content: center;
 }
 .produto{
@@ -58,16 +60,16 @@ a:hover {
 }
 .produtos-lista .produto{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Muda a orientação do flex para coluna*/
     align-items: center;
-    border-radius: 20px;
+    border-radius: 20px; /* Arredondamento das bordas */
     gap: 18px;
     width: 200px;
-    box-shadow: 10px 10px 10px 3px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 10px 3px rgba(0,0,0,0.2); /* Sombra */
     transition: 0.4s;
 }
 .produtos-lista .produto:hover{
-    transform: scale(1.05);
+    transform: scale(1.05); /* Atributo transform define o que responderá ao evento */
     cursor: pointer;
 }
 main {
@@ -88,9 +90,17 @@ h3{
     width: 180px;
     border-radius: 20px;
 }
-img:hover{
-    
-}
 .produtos-lista .produto span{
     text-align: center;
+}
+#cadastro{
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 700px;
+    padding: 20px;
+    background-color: var(--cor-fundo-card);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 3px rgba(0,0,0,0.2);
 }
