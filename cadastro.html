@@ -68,9 +68,11 @@
         }
         
         function pegaValores() {
-            const produto = document.getElementById("nome_produto")
-            console.log(produto)
+            const produto = document.getElementById("nome_produto").value
+            const descricao = document.getElementById("desc_produto").value
+            const valor = document.getElementById("preco").value
             document.querySelector('ul[class="produtos"]').innerHTML = '<li>Produto cadastrado: '+produto+'</li>'
+            document.querySelector('ul[class="produtos"]').innerHTML = '<li>Descrição: '+descricao+'</li>'
         }
     </script>
 </body>
